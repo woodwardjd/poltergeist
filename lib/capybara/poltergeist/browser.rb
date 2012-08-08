@@ -112,6 +112,10 @@ module Capybara::Poltergeist
       command 'render', path.to_s, !!options[:full]
     end
 
+    def render_dom(path, options = {})
+      command 'render_dom', path.to_s
+    end
+
     def resize(width, height)
       command 'resize', width, height
     end

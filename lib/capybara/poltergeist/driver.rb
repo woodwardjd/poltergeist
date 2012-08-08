@@ -120,6 +120,10 @@ module Capybara::Poltergeist
       browser.render(path, options)
     end
 
+    def render_dom(path, options = {})
+      browser.render_dom(path)
+    end
+
     def resize(width, height)
       browser.resize(width, height)
     end
